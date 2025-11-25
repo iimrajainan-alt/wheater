@@ -34,7 +34,6 @@ async function lacakCuaca(kota) {
         console.log(data); // Cek konsol
 
         // 4. Update Tampilan (TEKS)
-        document.querySelector(".kartu-radar").style.borderColor = "#0f0";
         namaKota.innerHTML = data.name;
         suhu.innerHTML = Math.round(data.main.temp) + "°C";
         deskripsi.innerHTML = "Cuaca: " + data.weather[0].main;

@@ -18,8 +18,11 @@ body.tema-panas.kartu-radar {
     border-color: #fff;
     box-shadow: 0 0 30px rgba(225, 200, 0, 0.5);
 }
+body.tema-panas #ikon-cuaca {
+    filter: brightness(1.3) saturate(1.5) drop-shadow(0 0 30px rgba(255, 255, 0, 0.8));
+}
 body.tema-hujan {
-    background: linear-gradient(135deg, #203a43, #2c5364);
+    background: linear-gradient(135deg, #141e30, #243b55);
     color: #00d2ff;
 }
 body.tema-hujan.kartu-radar {
@@ -40,6 +43,16 @@ body.tema-mendung.kartu-radar {
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 255, 0, 0.2);
+    z-index: 1;
+    overflow: hidden;
+}
+#ikon-cuaca {
+    display: block;
+    margin: 0;
+    width: 120px;
+    height: auto;
+    filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.8)) brightness(1.2);
+    animation: melayang 3s infinite ease-in-out;
 }
 input, button {
     padding: 10px;
@@ -67,4 +80,12 @@ input, button {
 .kolom h3 {
     margin: 5px 0 0 0;
     color: #0f0;
+}
+@keyframes melayang {
+    0%, 100% { 
+        transform: translateY(0); 
+    }
+    50% { 
+        transform: translateY(-10px); 
+    }
 }
