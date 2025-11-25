@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Radar Cuaca</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <script src='script.js' defer></script>
+</head>
+<body>
+    <div class="kartu-radar">
+        <h1>RADAR CUACA</h1>
+
+        <input type="text" id="input-kota" placeholder="Masukan kota target...">
+        <button id="tombol-lacak">LACAK</button>
+
+        <div id="hasil-laporan" style="margin-top: 20px;">
+            <h2 id="nama-kota">----</h2>
+
+            <img id="ikon-cuaca" src="" alt="" style="width: 100px; display: none;">
+            
+            <h1 id="suhu">0°C</h1>
+            <p id="deskripsi">Menunggu data...</p>
+
+            <div class="info-tambahan">
+                <div class="kolom">
+                    <p>Kelembapan</p>
+                    <h3 id="kelembapan">0%</h3>
+                </div>
+                <div class="kolom">
+                    <p>angin</p>
+                    <h3 id="angin">0 m/s</h3>
+                </div>
+            </div>
+        </div>
+    </div>    
+</body>
+</html>

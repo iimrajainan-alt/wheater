@@ -1,0 +1,70 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #1a1a1a;
+    color: #0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    transition: background 1s ease, color 0.5s ease;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+}
+body.tema-panas {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    color: #fff;
+}
+body.tema-panas.kartu-radar {
+    border-color: #fff;
+    box-shadow: 0 0 30px rgba(225, 200, 0, 0.5);
+}
+body.tema-hujan {
+    background: linear-gradient(135deg, #203a43, #2c5364);
+    color: #00d2ff;
+}
+body.tema-hujan.kartu-radar {
+    border-color: #00d2ff;
+    box-shadow: 0 0 30px rgba(0, 210, 255, 0.3);
+}
+body.tema-mendung {
+    background: linear-gradient(135deg, #485563, #29323c);
+    color: #d7d2cc;
+}
+body.tema-mendung.kartu-radar {
+    border-color: #d2d2cc;
+    box-shadow: none;
+}
+.kartu-radar {
+    text-align: center;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.2);
+}
+input, button {
+    padding: 10px;
+    margin-top: 10px;
+}
+.info-tambahan {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+    gap: 20px;
+}
+.kolom {
+    text-align: center;
+}
+.kolom p {
+    font-size: 0.9em;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    opacity: 0.8;
+    margin: 0;
+}
+.kolom h3 {
+    margin: 5px 0 0 0;
+    color: #0f0;
+}
